@@ -4,35 +4,34 @@ import Image from "next/image";
 import tom from "../public/tom.jpeg";
 
 export default function Home() {
-  const [greatCallKB] = useSound("great call there kb.m4a");
-
-  const [aPlusThrow] = useSound("a plus throw.m4a");
-  const [allAboutPoints] = useSound("all about points.m4a");
-  const [andBeforeYouKnowIt] = useSound("and before you know it.m4a");
-  const [duckAndTurkey] = useSound("duck and turkey.m4a");
+  const [greatCallKB] = useSound("greatCallThereKb.m4a");
+  const [aPlusThrow] = useSound("aPlusThrow.m4a");
+  const [allAboutPoints] = useSound("allAboutPoints.m4a");
+  const [andBeforeYouKnowIt] = useSound("andBeforeYouKnowIt.m4a");
+  const [duckAndTurkey] = useSound("duckAndChicken.m4a");
   const [footrace] = useSound("footrace.m4a");
-  const [gottaHaveIt] = useSound("gotta have it.m4a");
-  const [hardToGainYards] = useSound("hard to gain yards.m4a");
-  const [itsAGameOfAttrition] = useSound("its a game of attrition.m4a");
-  const [weekToWeekLeague] = useSound("its a week to week league.m4a");
-  const [jimmiesAndJoes] = useSound("jimmies and joes.m4a");
-  const [letThePlayersPlay] = useSound("let the players play.m4a");
-  const [niceJobKB] = useSound("nice job kb.m4a");
-  const [noWhatAreTheyDoing] = useSound("no what are they doing.m4a");
-  const [nothingsGivenToYou] = useSound("nothings given to you.m4a");
-  const [ooohOoohAhhh] = useSound("oooh ooooh ahhhh.m4a");
-  const [recipeForSuccess] = useSound("recipe for success.m4a");
+  const [gottaHaveIt] = useSound("gottaHaveIt.m4a");
+  const [hardToGainYards] = useSound("hardToGainYards.m4a");
+  const [itsAGameOfAttrition] = useSound("itsAGameOfAttrition.m4a");
+  const [weekToWeekLeague] = useSound("itsAWeekToWeekLeague.m4a");
+  const [jimmiesAndJoes] = useSound("jimmysAndJoes.m4a");
+  const [letThePlayersPlay] = useSound("letThePlayersPlay.m4a");
+  const [niceJobKB] = useSound("niceJobKb.m4a");
+  const [noWhatAreTheyDoing] = useSound("noWhatAreTheyDoing.m4a");
+  const [nothingsGivenToYou] = useSound("nothingsGivenToYou.m4a");
+  const [ooohOoohAhhh] = useSound("ooohOooohAhhhh.m4a");
+  const [recipeForSuccess] = useSound("recipeForSuccess.m4a");
   const [resumes] = useSound("resumes.m4a");
-  const [scaryDude] = useSound("scary dude.m4a");
-  const [seenAQuarterbackEatAHotdog] = useSound("seen a quarterback eat a hotdog.m4a");
-  const [starVChampion] = useSound("star v champion.m4a");
-  const [thisIsCrazy] = useSound("this is crazy.m4a");
-  const [yourAskingForTrouble] = useSound("ur asking 4 trouble.m4a");
-  const [wasntDaycare] = useSound("wasnt daycare.m4a");
-  const [weCallThatAnAGap] = useSound("we call that an a gap.m4a");
+  const [scaryDude] = useSound("scaryDude.m4a");
+  const [seenAQuarterbackEatAHotdog] = useSound("seenAQuarterbackEatAHotdog.m4a");
+  const [starVChampion] = useSound("starVChampion.m4a");
+  const [thisIsCrazy] = useSound("thisIsCrazy.m4a");
+  const [yourAskingForTrouble] = useSound("urAsking4Trouble.m4a");
+  const [wasntDaycare] = useSound("wasntDaycare.m4a");
+  const [weCallThatAnAGap] = useSound("weCallThatAnAGap.m4a");
   const [what] = useSound("what.m4a");
-  const [youGottaBeKiddingMe] = useSound("you gotta be kidding me.m4a");
-  const [iWasImpressed] = useSound("i was impressed.m4a");
+  const [youGottaBeKiddingMe] = useSound("youGottaBeKiddingMe.m4a");
+  const [iWasImpressed] = useSound("iWasImpressed.m4a");
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -50,7 +49,7 @@ export default function Home() {
         <div className="grid grid-cols-3 sm:grid-cols-9 gap-4">
           <Button title="nice job, kb" sound={niceJobKB} />
           <Button title="when you gotta have it" sound={gottaHaveIt} />
-          <Button title="jimmy's and joe's" sound={jimmiesAndJoes} />
+          <Button title="jimmies and joes" sound={jimmiesAndJoes} />
           <Button title="oooh oooh ahhh" sound={ooohOoohAhhh} />
           <Button title="seen a quartback eating a hotdog" sound={seenAQuarterbackEatAHotdog} />
           <Button title="star vs a champion" sound={starVChampion} />
@@ -62,7 +61,7 @@ export default function Home() {
           <Button title="this wasn't daycare" sound={wasntDaycare} />
           <Button title="we call that an a gap" sound={weCallThatAnAGap} />
           <Button title="all about points" sound={allAboutPoints} />
-          <Button title="a plus throw a plus catch" sound={aPlusThrow} />
+          <Button title="a plus throw" sound={aPlusThrow} />
           <Button title="you gotta be kidding me" sound={youGottaBeKiddingMe} />
           <Button title="scary dude" sound={scaryDude} />
           <Button title="recipe for success" sound={recipeForSuccess} />
@@ -84,7 +83,7 @@ export default function Home() {
 
 function Button(props : ButtonProps) {
   return (
-    <div className="cursor-pointer text-sm sm:text-base border-white border-2 hover:bg-gray-500 p-2 rounded-md flex items-center" onClick={props.sound}>
+    <div className="cursor-pointer text-sm sm:text-base border-white border-2 hover:bg-gray-500 p-2 rounded-md flex items-center break-words overflow-clip" onClick={props.sound}>
       {props.title}
     </div>
   );
