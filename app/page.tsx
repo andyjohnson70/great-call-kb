@@ -83,7 +83,7 @@ export default function Home() {
 
 function Button(props : ButtonProps) {
   return (
-    <button className="cursor-pointer text-sm sm:text-base border-white border-2 hover:bg-gray-500 p-2 rounded-md flex items-center break-words overflow-clip uppercase" onClick={props.sound}>
+    <button className="cursor-pointer text-sm sm:text-base border-white border-2 hover:bg-gray-500 p-2 rounded-md flex items-center break-words overflow-clip uppercase" onClick={() => {props.sound()}}>
       {props.title}
     </button>
   );
