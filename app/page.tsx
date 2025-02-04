@@ -1,7 +1,7 @@
 "use client";
 import useSound from "use-sound";
 import Image from "next/image";
-import React, { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
+import React from "react";
 import tom from "../public/tom.jpeg";
 
 export default function Home() {
