@@ -49,7 +49,7 @@ export default function Home() {
         <div className="grid grid-cols-3 sm:grid-cols-9 gap-4">
           <Button title="nice job, kb" sound={niceJobKB} />
           <Button title="when you gotta have it" sound={gottaHaveIt} />
-          <Button title="jimmies and joes" sound={jimmiesAndJoes} />
+          <Button title="jimmys and joes" sound={jimmiesAndJoes} />
           <Button title="oooh oooh ahhh" sound={ooohOoohAhhh} />
           <Button title="seen a quartback eating a hotdog" sound={seenAQuarterbackEatAHotdog} />
           <Button title="star vs a champion" sound={starVChampion} />
